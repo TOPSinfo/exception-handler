@@ -1,0 +1,34 @@
+{
+  "name": "exception-handler",
+  "version": "1.0.0",
+  "description": "Exception handler is a lightweight, highly customizable, and developer-friendly Node.js package designed to simplify and standardize exception handling in your express applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node test/server.js",
+    "build": "npm run build:ts && rollup -c",
+    "build:ts": "tsc --project tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "error-handling",
+    "express",
+    "middleware"
+  ],
+  "module": "commonjs",
+  "author": "Tops Infosolutions",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "rollup": "^4.30.0",
+    "rollup-plugin-dts": "^6.1.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
