@@ -1,5 +1,5 @@
 {
-  "name": "exception-handler",
+  "name": "express-exceptions-handler",
   "version": "1.0.0",
   "description": "Exception handler is a lightweight, highly customizable, and developer-friendly Node.js package designed to simplify and standardize exception handling in your express applications.",
   "main": "index.js",
