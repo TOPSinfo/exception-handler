@@ -1,8 +1,17 @@
 {
   "name": "express-exceptions-handler",
   "version": "1.0.0",
-  "description": "Exception handler is a lightweight, highly customizable, and developer-friendly Node.js package designed to simplify and standardize exception handling in your express applications.",
-  "main": "index.js",
+  "description": "Express exceptions handler is a lightweight, highly customizable, and developer-friendly Node.js package designed to simplify and standardize exception handling in your express applications.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "import": "./dist/index.esm.js",
+    "require": "./dist/index.cjs.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node test/server.js",
@@ -15,7 +24,6 @@
     "express",
     "middleware"
   ],
-  "module": "commonjs",
   "author": "Tops Infosolutions",
   "license": "MIT",
   "devDependencies": {

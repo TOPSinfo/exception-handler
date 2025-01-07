@@ -1,11 +1,11 @@
 
-# Exception Handler Middleware
+# Express Exceptions Handler Middleware
 
 ## Overview
 
-The **Exception Handler Middleware** package simplifies error management in Express.js applications. It provides a library of predefined HTTP exceptions and a centralized error-handling middleware for structured and consistent error responses.
+The **Express Exceptions Handler Middleware** package simplifies error management in Express.js applications. It provides a library of predefined HTTP exceptions and a centralized error-handling middleware for structured and consistent error responses.
 
-### Why Use Exception Handler Middleware?
+### Why Use Express Exceptions Handler Middleware?
 
 -   **Predefined Exceptions**: Reduce repetitive code by leveraging ready-to-use exception classes.
     
@@ -32,20 +32,20 @@ The **Exception Handler Middleware** package simplifies error management in Expr
 Install the package via npm or yarn:
 
 ```
-npm install exception-handler
+npm install express-exceptions-handler
 ```
 
 ## Getting Started
 
 ### Example Usage
 
-Here is a basic example of how to integrate the **Exception Handler Middleware** into your Express.js application:
+Here is a basic example of how to integrate the **Express Exceptions Handler Middleware** into your Express.js application:
 
 #### Code Example:
 
 ```
 const express = require('express');
-const { UnauthorizedException, HttpException, errorHandlerMiddleware } = require('exception-handler');
+const { UnauthorizedException, HttpException, errorHandlerMiddleware } = require('express-exceptions-handler');
 
 const app = express();
 
@@ -73,7 +73,7 @@ The package includes various built-in exceptions corresponding to HTTP status co
 #### Example:
 
 ```
-const { NotFoundException, BadRequestException } = require('exception-handler');
+const { NotFoundException, BadRequestException } = require('express-exceptions-handler');
 
 app.get('/example', (req, res, next) => {
   try {
@@ -115,7 +115,7 @@ The `errorHandlerMiddleware` is a robust Express.js middleware that catches and 
 To define custom exceptions, extend the `HttpException` class as follows:
 
 ```
-const { HttpException } = require('exception-handler');
+const { HttpException } = require('express-exceptions-handler');
 
 class CustomException extends HttpException {
   constructor(message = 'Custom error occurred', status = 400) {
@@ -193,7 +193,7 @@ You can integrate the middleware with logging tools like `winston` or `bunyan` f
 
 ```
 const winston = require('winston');
-const { errorHandlerMiddleware } = require('exception-handler');
+const { errorHandlerMiddleware } = require('express-exceptions-handler');
 
 // Configure Winston logger
 const logger = winston.createLogger({
@@ -222,13 +222,13 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Feedback and Support
 
-If you encounter any issues or have suggestions for improvement, feel free to open an issue on GitHub. Thank you for using **Exception Handler Middleware**! 🚀# Exception Handler Middleware
+If you encounter any issues or have suggestions for improvement, feel free to open an issue on GitHub. Thank you for using **Express Exceptions Handler Middleware**! 🚀# Express Exceptions Handler Middleware
 
 ## Overview
 
-The **Exception Handler Middleware** package simplifies error management in Express.js applications. It provides a library of predefined HTTP exceptions and a centralized error-handling middleware for structured and consistent error responses.
+The **Express Exceptions Handler Middleware** package simplifies error management in Express.js applications. It provides a library of predefined HTTP exceptions and a centralized error-handling middleware for structured and consistent error responses.
 
-### Why Use Exception Handler Middleware?
+### Why Use Express Exceptions Handler Middleware?
 
 -   **Predefined Exceptions**: Reduce repetitive code by leveraging ready-to-use exception classes.
     
@@ -255,26 +255,20 @@ The **Exception Handler Middleware** package simplifies error management in Expr
 Install the package via npm or yarn:
 
 ```
-npm install exception-handler
-```
-
-or
-
-```
-yarn add exception-handler
+npm install express-exceptions-handler
 ```
 
 ## Getting Started
 
 ### Example Usage
 
-Here is a basic example of how to integrate the **Exception Handler Middleware** into your Express.js application:
+Here is a basic example of how to integrate the **Express Exceptions Handler Middleware** into your Express.js application:
 
 #### Code Example:
 
 ```
 const express = require('express');
-const { UnauthorizedException, HttpException, errorHandlerMiddleware } = require('exception-handler');
+const { UnauthorizedException, HttpException, errorHandlerMiddleware } = require('express-exceptions-handler');
 
 const app = express();
 
@@ -302,7 +296,7 @@ The package includes various built-in exceptions corresponding to HTTP status co
 #### Example:
 
 ```
-const { NotFoundException, BadRequestException } = require('exception-handler');
+const { NotFoundException, BadRequestException } = require('express-exceptions-handler');
 
 app.get('/example', (req, res, next) => {
   try {
@@ -344,7 +338,7 @@ The `errorHandlerMiddleware` is a robust Express.js middleware that catches and 
 To define custom exceptions, extend the `HttpException` class as follows:
 
 ```
-const { HttpException } = require('exception-handler');
+const { HttpException } = require('express-exceptions-handler');
 
 class CustomException extends HttpException {
   constructor(message = 'Custom error occurred', status = 400) {
@@ -411,7 +405,7 @@ You can integrate the middleware with logging tools like `winston` or `bunyan` f
 
 ```
 const winston = require('winston');
-const { errorHandlerMiddleware } = require('exception-handler');
+const { errorHandlerMiddleware } = require('express-exceptions-handler');
 
 // Configure Winston logger
 const logger = winston.createLogger({
@@ -440,4 +434,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Feedback and Support
 
-If you encounter any issues or have suggestions for improvement, feel free to open an issue on GitHub. Thank you for using **Exception Handler Middleware**! 🚀
+If you encounter any issues or have suggestions for improvement, feel free to open an issue on GitHub. Thank you for using **Express Exceptions Handler Middleware**! 🚀
