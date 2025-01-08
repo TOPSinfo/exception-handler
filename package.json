@@ -5,6 +5,11 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/TOPSinfo/exception-handler.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TOPSinfo/exception-handler.git"
+  },
   "files": [
     "dist"
   ],

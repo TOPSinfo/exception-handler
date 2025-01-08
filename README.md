@@ -188,7 +188,7 @@ Here is the list of available predefined exceptions with their corresponding HTT
 
 ## Contributing
 
-We welcome contributions! If you find bugs or have feature requests, please open an issue or submit a pull request on the [GitHub repository](https://github.com/your-repo/exception-handler).
+We welcome contributions! If you find bugs or have feature requests, please open an issue or submit a pull request on the [GitHub repository](https://github.com/TOPSinfo/exception-handler.git).
 
 ## License
 
